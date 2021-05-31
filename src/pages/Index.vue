@@ -21,6 +21,9 @@
         </a>
       </div>
     </div>
+    <div class="footer">
+      ©2021 Digital Ascent. Todos los derechos reservados.
+    </div>
   </div>
 </div>
 </template>
@@ -105,7 +108,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
 }
 .website {
   width: 1100px;
@@ -123,6 +125,7 @@ body {
 }
 .logo {
   height: 40px;
+  width: auto;
 }
 .image-container {
   margin-top: -50px;
@@ -160,5 +163,45 @@ body {
   height: 16px;
   width: auto;
   margin-right: 10px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 16px 0;
+  font-size: 12px;
+}
+@media only screen and (max-width: 900px) {
+  .image-container {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .text {
+    width: 75%;
+    max-width: 75%;
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .text {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo {
+    height: 30px;
+  }
+  .mail {
+    font-size: 13px;
+  }
+  .footer {
+    font-size: 10px;
+  }
 }
 </style>
